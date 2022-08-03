@@ -1,0 +1,15 @@
+package com.example.reggie.Service.impl;
+
+
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.example.reggie.Service.EmployeeService;
+import com.example.reggie.entity.Employee;
+import com.example.reggie.mapper.EmployeeMapper;
+import org.springframework.stereotype.Service;
+
+/**
+ * @date 2022/7/9- 22:38
+ */
+@Service
+public class EmployeeServiceImpl extends ServiceImpl<EmployeeMapper, Employee> implements EmployeeService {
+}
