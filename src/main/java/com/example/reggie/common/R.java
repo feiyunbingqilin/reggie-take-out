@@ -2,6 +2,7 @@ package com.example.reggie.common;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -9,7 +10,7 @@ import java.util.Map;
  * @date 2022/7/9- 23:26
  */
 @Data
-public class R <T>{
+public class R <T> implements Serializable {
     private Integer code;           //code为1代表成功，0与其他数字表示失败
     private String msg;             //错误信息
     private T data;                 //数据
